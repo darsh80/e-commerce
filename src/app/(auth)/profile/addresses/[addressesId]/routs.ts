@@ -1,6 +1,6 @@
 
 import { NextResponse } from "next/server";
-import { GetDecodedToken } from "@/lib/GetDecodedToken";
+import { GetDecodedToken } from "@/lib/GetUserToken";
 
 export async function DELETE(
   request: Request,
@@ -31,7 +31,7 @@ export async function DELETE(
 
     return NextResponse.json(data);
 
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       {
         message: "Failed to delete address",

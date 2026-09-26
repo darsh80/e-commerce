@@ -7,10 +7,11 @@ import {
   FaGear,
   FaChevronRight,
 } from "react-icons/fa6";
-import AddressesHero from "./components/AddressesHero/page";
-import AddAddress from "./components/AddressesHero/AddAddress/page";
-import DeleteAddress from "./components/DeleteAddress/page";
-import EditAddress from "./components/EditAddress/page";
+import AddressesHero from "./Components/AddressesHero/page";
+import AddAddress from "./Components/AddressesHero/AddAddress/page";
+import EditAddress from "./Components/EditAddress/page";
+import DeleteAddress from "./Components/DeleteAddress/page";
+
 
 export default async function AddressesPage() {
 
