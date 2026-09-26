@@ -1,7 +1,7 @@
 export interface allproductesResponse {
   results: number
   metadata: Metadata
-  data: product[]
+  data: Product[]
 }
 
 export interface Metadata {
@@ -11,7 +11,7 @@ export interface Metadata {
   nextPage: number
 }
 
-export interface product {
+export interface Product {
   sold: number
   images: string[]
   subcategory: Subcategory[]
@@ -30,7 +30,7 @@ export interface product {
   updatedAt: string
   id: string
   priceAfterDiscount?: number
-  availableColors?: any[]
+  availableColors?: string[]
 }
 
 export interface Subcategory {
@@ -52,4 +52,81 @@ export interface Brand {
   name: string
   slug: string
   image: string
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+export interface DetailseResponse {
+  data: Data
+}
+
+export interface Data {
+  sold: number
+  images: string[]
+  subcategory: Subcategory[]
+  ratingsQuantity: number
+  _id: string
+  title: string
+  slug: string
+  description: string
+  quantity: number
+  price: number
+  imageCover: string
+  category: Category
+  brand: Brand
+  ratingsAverage: number
+  createdAt: string
+  updatedAt: string
+  __v: number
+  reviews: Review[]
+  id: string
+}
+
+export interface Subcategory {
+  _id: string
+  name: string
+  slug: string
+  category: string
+}
+
+export interface Category {
+  _id: string
+  name: string
+  slug: string
+  image: string
+}
+
+export interface Brand {
+  _id: string
+  name: string
+  slug: string
+  image: string
+}
+
+export interface Review {
+  _id: string
+  review: string
+  rating: number
+  product: string
+  user: User
+  createdAt: string
+  updatedAt: string
+  __v: number
+}
+
+export interface User {
+  _id: string
+  name: string
 }
