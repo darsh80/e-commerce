@@ -24,10 +24,17 @@ type CheckoutFormValues = {
 };
 
 type Product = {
-  id: string;
-  name: string;
-  price: number;
-  quantity: number;
+  count: number;
+  product: {
+    _id?: string;
+    id?: string;
+    name?: string;
+    title?: string;
+    price: number;
+    quantity?: number;
+    imageCover?: string;
+    [key: string]: unknown;
+  };
 };
 
 type Cart = {
@@ -61,7 +68,7 @@ export default function Page() {
   useEffect(() => {
     async function getCart() {
       const response = await getUserCart();
-      setCart (response?.data);
+      setCart(response?.data as unknown as Cart);
     }
 
     getCart();

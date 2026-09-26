@@ -1,8 +1,6 @@
-import CategoryHeroo from "@/app/electronics/Components/CategoryHeroo/page";
-import CategoryFilterr from "@/app/electronics/Components/CategoryFilterr/page";
-import CategoryProductss from "@/app/electronics/Components/CategoryProductss/page";
-
-
+import CategoryHeroo from "@/app/electronics/Components/CategoryHeroo/CategoryHeroo";
+import CategoryProductss from "@/app/electronics/Components/CategoryProductss/CategoryProductss";
+import CategoryFilterr from "../Components/CategoryFilterr/CategoryFilterr";
 
 export default async function Page({
   params,

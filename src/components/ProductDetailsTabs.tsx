@@ -79,7 +79,7 @@ export default function ProductDetailsTabs({ product }: Props) {
 
 </TabsList>
         {/* ================= DETAILS TAB ================= */}
-        <TabsContent value="details" className="mt-6">
+        <TabsContent className="mt-6">
 
           <div className="space-y-6">
 
@@ -157,7 +157,7 @@ export default function ProductDetailsTabs({ product }: Props) {
         </TabsContent>
 
         {/* ================= REVIEWS TAB ================= */}
-        <TabsContent value="reviews" className="mt-6">
+        <TabsContent className="mt-6">
 
           <div className="space-y-4">
 
@@ -185,7 +185,7 @@ export default function ProductDetailsTabs({ product }: Props) {
         </TabsContent>
 
  {/* ================= SHIPPING TAB ================= */}
-<TabsContent value="shipping" className="mt-4">
+<TabsContent className="mt-4">
   <div className="space-y-4">
 
     {/* GRID */}

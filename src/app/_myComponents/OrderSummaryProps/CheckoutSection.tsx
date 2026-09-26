@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 interface CheckoutSectionProps {
   isLoggedIn: boolean;
-  cartId: string;
+  cartId?: string;
 }
 
 export default function CheckoutSection({

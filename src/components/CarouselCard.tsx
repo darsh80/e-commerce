@@ -56,8 +56,7 @@ export function CarouselCard({ products = [] }: Props) {
 
                   {/* FAVORITE */}
                   <div className="absolute top-2 right-2 z-10 hover:cursor-pointer">
-                    <FavoriteButton />
-                  </div>
+                  <FavoriteButton productId={product._id} />                  </div>
                   {/* REFRESH */}
                   <div className="absolute top-10 right-0 p-2 hover:cursor-pointer ">
                     <RefreshCwButton />

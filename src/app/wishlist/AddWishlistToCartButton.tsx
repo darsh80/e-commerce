@@ -22,7 +22,7 @@ export default function AddWishlistToCartButton({
     setLoading(true);
 
     try {
-      const data = await addToCart(productId, 1);
+      const data = await addToCart(productId, true);
 
       if (data.status === "success") {
         const cartResponse = await getUserCart();

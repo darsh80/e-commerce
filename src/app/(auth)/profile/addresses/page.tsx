@@ -9,9 +9,8 @@ import {
 } from "react-icons/fa6";
 import AddressesHero from "./Components/AddressesHero/page";
 import AddAddress from "./Components/AddressesHero/AddAddress/page";
-import EditAddress from "./Components/EditAddress/page";
 import DeleteAddress from "./Components/DeleteAddress/page";
-
+import EditAddress from "./Components/EditAddress/page";
 
 export default async function AddressesPage() {
 
@@ -100,7 +99,7 @@ export default async function AddressesPage() {
             </div>
 
             {/* Empty State */}
-           {addressesResponse.data.length > 0 ? (
+          {addressesResponse.data.length > 0 ? (
 
   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 

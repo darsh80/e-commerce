@@ -8,11 +8,15 @@ import {
 
 interface Product {
   count: number;
-  price: number;
   product: {
-    _id: string;
-    title: string;
-    imageCover: string;
+    _id?: string;
+    id?: string;
+    name?: string;
+    title?: string;
+    price: number;
+    quantity?: number;
+    imageCover?: string;
+    [key: string]: unknown;
   };
 }
 
@@ -67,12 +71,12 @@ export default function CheckoutOrderSummary({
                   </p>
 
                   <p className="text-xs text-gray-500 mt-0.5">
-                    {item.count} × {item.price} EGP
+                    {item.count} × {item.product.price} EGP
                   </p>
                 </div>
 
                 <p className="text-sm font-bold text-gray-900 shrink-0">
-                  {item.count * item.price} EGP
+                  {item.count * item.product.price} EGP
                 </p>
               </div>
             ))}
